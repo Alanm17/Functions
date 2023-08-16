@@ -40,14 +40,28 @@
 //   return 2037 - birthYear;
 // };
 //Arrow function
-const calcAge3 = (birthYear) => 2037 - birthYear;
-const age3 = calcAge3(1991);
-console.log(age3);
+// const calcAge3 = (birthYear) => 2037 - birthYear;
+// const age3 = calcAge3(1991);
+// console.log(age3);
 
-const yearUntilRetirement = (birthYear, firstName) => {
-  const age = 2037 - birthYear;
-  const retirment = 65 - age;
-  return ` ${firstName} retires in ${retirment} years`;
-};
-console.log(yearUntilRetirement(1991, "Jonas"));
-console.log(yearUntilRetirement(1980, "bob"));
+// const yearUntilRetirement = (birthYear, firstName) => {
+//   const age = 2037 - birthYear;
+//   const retirment = 65 - age;
+//   return ` ${firstName} retires in ${retirment} years`;
+// };
+// console.log(yearUntilRetirement(1991, "Jonas"));
+// console.log(yearUntilRetirement(1980, "bob"));
+
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+  const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange.`;
+  return juice;
+}
+console.log(fruitProcessor(2, 3));
+
+// console.log(cutFruitPieces);
