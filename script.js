@@ -108,30 +108,30 @@
 //coding
 
 //task 1
-const calcAvarega = (a, b, c) => (a + b + c) / 3;
-console.log(calcAvarega(3, 4, 5));
-// test1
-let scoreDoolphins = calcAvarega(44, 23, 71);
-let scoreKoalas = calcAvarega(65, 54, 49);
-console.log(scoreDoolphins, scoreKoalas);
-
-const checkWinner = function (avgDolphins, avgKoalas) {
-  if (avgDolphins >= 2 * avgKoalas) {
-    console.log(`Dolphins win thropy (${avgDolphins} vs. ${avgKoalas})`);
-  } else if (avgKoalas >= 2 * avgDolphins) {
-    console.log(`Koalas win thropy (${avgKoalas} vs. ${avgDolphins})`);
-  } else {
-    console.log("No team wins...");
-  }
-};
-checkWinner(scoreDoolphins, scoreKoalas);
-checkWinner(546, 111);
-
-// test 2
-scoreDoolphins = calcAvarega(85, 54, 41);
-scoreKoalas = calcAvarega(23, 34, 27);
-checkWinner(scoreDoolphins, scoreKoalas);
+// const calcAvarega = (a, b, c) => (a + b + c) / 3;
+// console.log(calcAvarega(3, 4, 5));
+// // test1
+// let scoreDoolphins = calcAvarega(44, 23, 71);
+// let scoreKoalas = calcAvarega(65, 54, 49);
 // console.log(scoreDoolphins, scoreKoalas);
+
+// const checkWinner = function (avgDolphins, avgKoalas) {
+//   if (avgDolphins >= 2 * avgKoalas) {
+//     console.log(`Dolphins win thropy (${avgDolphins} vs. ${avgKoalas})`);
+//   } else if (avgKoalas >= 2 * avgDolphins) {
+//     console.log(`Koalas win thropy (${avgKoalas} vs. ${avgDolphins})`);
+//   } else {
+//     console.log("No team wins...");
+//   }
+// };
+// checkWinner(scoreDoolphins, scoreKoalas);
+// checkWinner(546, 111);
+
+// // test 2
+// scoreDoolphins = calcAvarega(85, 54, 41);
+// scoreKoalas = calcAvarega(23, 34, 27);
+// checkWinner(scoreDoolphins, scoreKoalas);
+// // console.log(scoreDoolphins, scoreKoalas);
 // //task 3
 // function checkWinner(Dolphins, Koalas) {
 //   if (Dolphins >= 2 * Koalas) {
@@ -142,3 +142,19 @@ checkWinner(scoreDoolphins, scoreKoalas);
 // }
 
 // const checkWinner = calcAvarega(dolphins, koalas);
+
+const friend1 = "Michael";
+const friend2 = "Steven";
+const friend3 = "Peter";
+
+const friends = ["Michael", " Steven", "Peter"];
+console.log(friends);
+const years = new Array(1991, 1984, 2008, 2020);
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length - 1);
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Jay";
+console.log(friends);
