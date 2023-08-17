@@ -66,24 +66,79 @@
 
 // console.log(cutFruitPieces);
 
-const calcAge = function (birthYear) {
-  return 2037 - birthYear;
-};
+// const calcAge = function (birthYear) {
+//   return 2037 - birthYear;
+// };
 
-const yearUntilRetirement = function (birthYear, firstName) {
-  const age = calcAge(birthYear);
-  const retirement = 65 - age;
+// const yearUntilRetirement = function (birthYear, firstName) {
+//   const age = calcAge(birthYear);
+//   const retirement = 65 - age;
 
-  if (retirement > 0) {
-    console.log(` ${firstName} retires in ${retirement} years`);
-    return retirement;
+//   if (retirement > 0) {
+//     console.log(` ${firstName} retires in ${retirement} years`);
+//     return retirement;
+//   } else {
+//     console.log(`${firstName} has already retired :)`);
+//     return -1;
+//   }
+// };
+
+// // return ` ${firstName} retires in ${retirment} years`;
+
+// console.log(yearUntilRetirement(1991, "Jonas"));
+// console.log(yearUntilRetirement(1950, "Mike"));
+
+//Arrow function
+// const calcAge3 = (birthYear) => 2037 - birthYear;
+// const age3 = calcAge3(1991);
+// console.log(age3);
+
+// const yearUntilRetirement = (birthYear, firstName) => {
+//   const age = 2037 - birthYear;
+//   const retirment = 65 - age;
+//   return ` ${firstName} retires in ${retirment} years`;
+// };
+// console.log(yearUntilRetirement(1991, "Jonas"));
+// console.log(yearUntilRetirement(1980, "bob"));
+// const calcAverage = (checkWinner) => (dolphins,'vs' koalas);
+// const dolphins = (44 + 23 + 71) / 3;
+// const koalas = (23 + 34 + 27) / 3;
+// let function = checkWinner
+
+//coding
+
+//task 1
+const calcAvarega = (a, b, c) => (a + b + c) / 3;
+console.log(calcAvarega(3, 4, 5));
+// test1
+let scoreDoolphins = calcAvarega(44, 23, 71);
+let scoreKoalas = calcAvarega(65, 54, 49);
+console.log(scoreDoolphins, scoreKoalas);
+
+const checkWinner = function (avgDolphins, avgKoalas) {
+  if (avgDolphins >= 2 * avgKoalas) {
+    console.log(`Dolphins win thropy (${avgDolphins} vs. ${avgKoalas})`);
+  } else if (avgKoalas >= 2 * avgDolphins) {
+    console.log(`Koalas win thropy (${avgKoalas} vs. ${avgDolphins})`);
   } else {
-    console.log(`${firstName} has already retired :)`);
-    return -1;
+    console.log("No team wins...");
   }
 };
+checkWinner(scoreDoolphins, scoreKoalas);
+checkWinner(546, 111);
 
-// return ` ${firstName} retires in ${retirment} years`;
+// test 2
+scoreDoolphins = calcAvarega(85, 54, 41);
+scoreKoalas = calcAvarega(23, 34, 27);
+checkWinner(scoreDoolphins, scoreKoalas);
+// console.log(scoreDoolphins, scoreKoalas);
+// //task 3
+// function checkWinner(Dolphins, Koalas) {
+//   if (Dolphins >= 2 * Koalas) {
+//     console.log(`KOALAS WIN (`${Koalas} VS ${Dolphins})`);
+//   } else {
+//     console.log(`Dolphins WIN (`${Dolphins} VS ${Koalas})`);
+//   }
+// }
 
-console.log(yearUntilRetirement(1991, "Jonas"));
-console.log(yearUntilRetirement(1950, "Mike"));
+// const checkWinner = calcAvarega(dolphins, koalas);
