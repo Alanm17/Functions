@@ -210,19 +210,20 @@
 
 //CHALLANGE
 
-const calcTip = function (bill, reg) {
+const calcTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-  return reg >= 200 && reg <= 300 ? reg * 0.15 : reg * 0.2;
+  // return reg >= 200 && reg <= 300 ? reg * 0.15 : reg * 0.2;
 };
 // const calcTip = (bill) =>
 //   bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 const bills = [125, 555, 44];
-const reg = [234, 121, 290];
+// const reg = [234, 121, 290];
 const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-const tip = [calcTip(reg[0]), calcTip(reg[1]), calcTip(reg[2])];
-console.log(bills, tips);
-console.log(reg, tip);
-reg.push(24);
-console.log(reg);
-
-console.log(calcTip);
+// const tip = [calcTip(reg[0]), calcTip(reg[1]), calcTip(reg[2])];
+const totals = [
+  bills[0] + tips[0],
+  bills[1] + tips[1],
+  bills[2] + tips[2],
+  // bills[3] + tips[3],
+];
+console.log(bills, tips, totals);
