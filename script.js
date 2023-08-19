@@ -243,33 +243,55 @@ const jonas = {
   job: "student",
   friends: ["Michael", "Peter", "Steven"],
 };
-console.log(jonas);
+// console.log(jonas);
 
-console.log(jonas.lastName);
-console.log(jonas["firstName"]);
-const nameKey = "Name";
-console.log(jonas["first" + nameKey]);
-console.log(jonas["last" + nameKey]);
+// console.log(jonas.lastName);
+// console.log(jonas["firstName"]);
+// const nameKey = "Name";
+// console.log(jonas["first" + nameKey]);
+// console.log(jonas["last" + nameKey]);
 
-const interestedIn = prompt(
-  "What do you wanna know about me? Choose last or first name or age,job and friends"
-);
+// const interestedIn = prompt(
+//   "What do you wanna know about me? Choose last or first name or age,job and friends"
+// );
 
-if (jonas[interestedIn]) {
-  console.log(jonas[interestedIn]);
-} else {
-  console.log(
-    "Wrong request! Choose lastName or firstName or age,job and friends!"
-  );
-}
-jonas.location = "Portugal";
-jonas["twitter"] = "@Kholdarov";
-console.log(jonas);
+// if (jonas[interestedIn]) {
+//   console.log(jonas[interestedIn]);
+// } else {
+//   console.log(
+//     "Wrong request! Choose lastName or firstName or age,job and friends!"
+//   );
+// }
+// jonas.location = "Portugal";
+// jonas["twitter"] = "@Kholdarov";
+// console.log(jonas);
 
-/// Challenge
-// jonas.friends = 3 ;
-// friends.'Michael'
-// console.log(jonas.friends.3)
-console.log(
-  `${jonas.firstName} has ${jonas.friends.length} friends , and his best friend is  ${jonas.friends[0]}`
-);
+// /// Challenge
+// // jonas.friends = 3 ;
+// // friends.'Michael'
+// // console.log(jonas.friends.3)
+// console.log(
+//   `${jonas.firstName} has ${jonas.friends.length} friends , and his best friend is  ${jonas.friends[0]}`
+// );
+
+// const Mukhammadaziz = {
+//   firstName: "Mukhammadaziz",
+//   lastName: "Kholdarov",
+//   age: 2023 - 2003,
+//   job: "student",
+//   friends: ["Michael", "Peter", "Steven"],
+// };
+// console.log(Mukhammadaziz.lastName);
+// console.log(Mukhammadaziz["lastName"]);
+// const nameKey = "Name";
+// console.log(jonas["first" + nameKey]);
+
+// const interestedIn = prompt(
+//   "What do you wanna know about me ? Options:friends , job , age , lastName , firstName or Friends"
+// );
+// console.log(Mukhammadaziz[interestedIn]);
+// if (Mukhammadaziz[interestedIn]) {
+//   console.log(jonas[interestedIn]);
+// } else {
+//   console.log("Wrong request!");
+// }
