@@ -239,7 +239,7 @@
 const jonas = {
   firstName: "Mukhammadaziz",
   lastName: "Kholdarov",
-  age: 2037 - 2003,
+  age: 2023 - 2003,
   job: "student",
   friends: ["Michael", "Peter", "Steven"],
 };
@@ -254,4 +254,22 @@ console.log(jonas["last" + nameKey]);
 const interestedIn = prompt(
   "What do you wanna know about me? Choose last or first name or age,job and friends"
 );
-console.log(jonas[interestedIn]);
+
+if (jonas[interestedIn]) {
+  console.log(jonas[interestedIn]);
+} else {
+  console.log(
+    "Wrong request! Choose lastName or firstName or age,job and friends!"
+  );
+}
+jonas.location = "Portugal";
+jonas["twitter"] = "@Kholdarov";
+console.log(jonas);
+
+/// Challenge
+// jonas.friends = 3 ;
+// friends.'Michael'
+// console.log(jonas.friends.3)
+console.log(
+  `${jonas.firstName} has ${jonas.friends.length} friends , and his best friend is  ${jonas.friends[0]}`
+);
