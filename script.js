@@ -236,13 +236,13 @@
 //   ["Michael", "Peter", "Steven"],
 // ];
 
-const jonas = {
-  firstName: "Mukhammadaziz",
-  lastName: "Kholdarov",
-  age: 2023 - 2003,
-  job: "student",
-  friends: ["Michael", "Peter", "Steven"],
-};
+// const jonas = {
+//   firstName: "Mukhammadaziz",
+//   lastName: "Kholdarov",
+//   age: 2023 - 2003,
+//   job: "student",
+//   friends: ["Michael", "Peter", "Steven"],
+// };
 // console.log(jonas);
 
 // console.log(jonas.lastName);
@@ -295,3 +295,83 @@ const jonas = {
 // } else {
 //   console.log("Wrong request!");
 // }
+
+// let Drive = false;
+// const passTest = false;
+// if (passTest) Drive = true;
+// if (Drive) {
+//   console.log("I can drive a car ");
+// } else {
+//   console.log("I can't drive ");
+// }
+//FUNCTION LOGGER
+function amj() {
+  console.log("sjp");
+  console.log('I"M Mukhammadaziz');
+}
+
+if ((amj = 'I"M Mukhammadaziz' >= "sjp")) {
+  console.log("I'm here");
+} else {
+  console.log("I'm not here");
+}
+
+/// Serious task
+function mukk(cars, tanks) {
+  console.log(cars, tanks);
+  const juice = ` ${cars} cars and ${tanks} tanks have  been sold`;
+  return juice;
+}
+const sales = mukk(22, 34);
+console.log(sales); //// WELL DONE
+
+//  <=*****************************************/////////////////////////////////////////////FUNCTION EXPRESSION
+const games = function (a, b, c) {
+  return (a + b + c) / 3;
+};
+console.log(games(34, 2123, 45));
+//
+
+// <=*****************************************////////////////////////////////////////////FUNCTION DECLORATION
+function game(a, b, c) {
+  return (a - b - c) / 2;
+}
+console.log(game(123, 345, 213));
+
+// <=*****************************************///////////////////////////////////////////////////ARROW FUNCTION
+const gm = (a, b, c) => (a * b + c) / 2;
+console.log(gm(345, 23, 12));
+
+// const calcAvarega = (a, b, c) => (a + b + c) / 3;
+// console.log(calcAvarega(3, 4, 5));
+// // test1
+// let scoreDoolphins = calcAvarega(44, 23, 71);
+// let scoreKoalas = calcAvarega(65, 54, 49);
+// console.log(scoreDoolphins, scoreKoalas);
+
+// const checkWinner = function (avgDolphins, avgKoalas) {
+//   if (avgDolphins >= 2 * avgKoalas) {
+//     console.log(`Dolphins win thropy (${avgDolphins} vs. ${avgKoalas})`);
+//   } else if (avgKoalas >= 2 * avgDolphins) {
+//     console.log(`Koalas win thropy (${avgKoalas} vs. ${avgDolphins})`);
+//   } else {
+//     console.log("No team wins...");
+//   }
+// };
+// checkWinner(scoreDoolphins, scoreKoalas);
+// checkWinner(546, 111);
+
+//  <=*****************************************/////////////////////////////////////////////////////// FUNCTIONS
+// //function declorations
+// function calcAge1(birthYear) {
+//   return 2037 - birthYear;
+// }
+// const age1 = calcAge1(1991);
+// //function expression
+// const calcAge2 = function (birthYear) {
+//   return 2037 - birthYear;
+// };
+//Arrow function
+// const calcAge3 = (birthYear) => 2037 - birthYear;
+// const age3 = calcAge3(1991);
+// console.log(age3);
