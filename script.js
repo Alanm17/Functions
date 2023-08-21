@@ -316,21 +316,6 @@ if ((amj = 'I"M Mukhammadaziz' >= "sjp")) {
   console.log("I'm not here");
 }
 
-/// Serious task
-function mukk(cars, tanks) {
-  // console.log(cars, tanks);
-  const juice = ` ${cars} cars and ${tanks} tanks have  been sold`;
-  return juice;
-}
-// const sales = mukk(22, 34);
-console.log(mukk(34, 34)); //// WELL DONE
-
-function asd(asr, ase) {
-  const ask = [asr + ase] / 2;
-  console.log(`${asr} bor va ${ase} qoldi , toplam ${ask}`);
-}
-const ask = asd(23, 34); //// WELL DONE
-
 //  <=*****************************************/////////////////////////////////////////////FUNCTION EXPRESSION
 const games = function (a, b, c) {
   return (a + b + c) / 3;
@@ -381,3 +366,104 @@ console.log(gm(345, 23, 12));
 // const calcAge3 = (birthYear) => 2037 - birthYear;
 // const age3 = calcAge3(1991);
 // console.log(age3);
+
+// function mukk(cars, tanks) {
+//   const automobiles = ` ${cars} cars and ${tanks} tanks have been sold`;
+//   return automobiles;
+// }
+
+// const automobiles = mukk(34, 34); // Call the function and capture the result
+
+// function asd(asr, ase) {
+//   const ask = (asr + ase) / 2;
+//   return ask; // Return the calculated average
+// }
+
+// const averageAmount = asd(100000, 3400); // Call the function and capture the result
+
+// // Construct the final message using the captured variables
+// const finalMessage = `The sum of automobiles ${automobiles} and their revenue $100000 with $3400 tax. Total amount left: ${averageAmount}`;
+
+// // Log the final message
+// console.log(finalMessage);
+
+// // Log the output of mukk and asd functions directly
+// // console.log(mukk(22, 34));
+// console.log(asd(100000, 3400));
+
+// function mukk(cars, tanks) {
+//   const automobiles = ` ${cars} cars and ${tanks} tanks have been sold`;
+//   return automobiles;
+// }
+
+// const automobiles = mukk(34, 34); // Call the function and capture the result
+
+// function asd(asr, ase) {
+//   const ask = asr - ase;
+//   return ask; // Return the calculated average
+// }
+
+// const carPrice = 100000;
+// const taxAmount = 3400;
+
+// const averageAmount = asd(carPrice, taxAmount); // Call the function and capture the result
+
+// // Construct the final message using the captured variables
+// const finalMessage = `The${automobiles} and their revenue $${carPrice} with $${taxAmount} tax. Total amount left: $${averageAmount}`;
+
+// // Log the final message
+// console.log(finalMessage);
+
+// Log the output of mukk and asd functions directly
+// console.log(mukk(22, 34));
+// console.log(asd(carPrice, taxAmount));
+
+//Serious task
+function muk(car, tank) {
+  const automobile = ` ${car} cars and ${tank} tanks have been sold`;
+  return automobile;
+}
+let carsSold;
+
+while (true) {
+  const input = +prompt("Enter the number of cars sold:");
+
+  if (!isNaN(input)) {
+    carsSold = input;
+    break; // Exit the loop if valid input is provided
+  } else {
+    alert("Please enter only numbers.");
+  }
+}
+
+let tankSold;
+
+while (true) {
+  const input = +prompt("Enter the number of tanks sold:");
+
+  if (!isNaN(input)) {
+    tankSold = input;
+    break; // Exit the loop if valid input is provided
+  } else {
+    alert("Please enter only numbers.");
+  }
+}
+
+console.log("Cars sold:", carsSold);
+console.log("Tanks sold:", tankSold);
+
+const automobile = muk(carsSold, tankSold);
+//<=*****************************************///////////////////
+
+const PricePerCar = 12000;
+const TaxPerCar = 300;
+console.log(carsSold);
+const revenue = (carsSold + tankSold) * PricePerCar;
+const tax = (carsSold + tankSold) * TaxPerCar;
+const amountleft = revenue - tax;
+// console.log(amountleft);
+
+const final = `${automobile} and their revenue $${revenue} with $${tax} tax.
+total amount left $${amountleft}`;
+
+console.log(final);
