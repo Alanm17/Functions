@@ -318,12 +318,18 @@ if ((amj = 'I"M Mukhammadaziz' >= "sjp")) {
 
 /// Serious task
 function mukk(cars, tanks) {
-  console.log(cars, tanks);
+  // console.log(cars, tanks);
   const juice = ` ${cars} cars and ${tanks} tanks have  been sold`;
   return juice;
 }
-const sales = mukk(22, 34);
-console.log(sales); //// WELL DONE
+// const sales = mukk(22, 34);
+console.log(mukk(34, 34)); //// WELL DONE
+
+function asd(asr, ase) {
+  const ask = [asr + ase] / 2;
+  console.log(`${asr} bor va ${ase} qoldi , toplam ${ask}`);
+}
+const ask = asd(23, 34); //// WELL DONE
 
 //  <=*****************************************/////////////////////////////////////////////FUNCTION EXPRESSION
 const games = function (a, b, c) {
