@@ -467,3 +467,14 @@ const final = `${automobile} and their revenue $${revenue} with $${tax} tax.
 total amount left $${amountleft}`;
 
 console.log(final);
+const cutFruitPieces = (fruit) => fruit * 4;
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+
+  const juice = `Juice with ${applePieces} apple pieces and ${orangePieces} orange pieces.`;
+  return juice;
+}
+
+console.log(fruitProcessor(4, 5));
