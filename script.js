@@ -305,33 +305,33 @@
 //   console.log("I can't drive ");
 // }
 //FUNCTION LOGGER
-function amj() {
-  console.log("sjp");
-  console.log('I"M Mukhammadaziz');
-}
+// function amj() {
+//   console.log("sjp");
+//   console.log('I"M Mukhammadaziz');
+// }
 
-if ((amj = 'I"M Mukhammadaziz' >= "sjp")) {
-  console.log("I'm here");
-} else {
-  console.log("I'm not here");
-}
+// if ((amj = 'I"M Mukhammadaziz' >= "sjp")) {
+//   console.log("I'm here");
+// } else {
+//   console.log("I'm not here");
+// }
 
-//  <=*****************************************/////////////////////////////////////////////FUNCTION EXPRESSION
-const games = function (a, b, c) {
-  return (a + b + c) / 3;
-};
-console.log(games(34, 2123, 45));
-//
+// //  <=*****************************************/////////////////////////////////////////////FUNCTION EXPRESSION
+// const games = function (a, b, c) {
+//   return (a + b + c) / 3;
+// };
+// console.log(games(34, 2123, 45));
+// //
 
-// <=*****************************************////////////////////////////////////////////FUNCTION DECLORATION
-function game(a, b, c) {
-  return (a - b - c) / 2;
-}
-console.log(game(123, 345, 213));
+// // <=*****************************************////////////////////////////////////////////FUNCTION DECLORATION
+// function game(a, b, c) {
+//   return (a - b - c) / 2;
+// }
+// console.log(game(123, 345, 213));
 
-// <=*****************************************///////////////////////////////////////////////////ARROW FUNCTION
-const gm = (a, b, c) => (a * b + c) / 2;
-console.log(gm(345, 23, 12));
+// // <=*****************************************///////////////////////////////////////////////////ARROW FUNCTION
+// const gm = (a, b, c) => (a * b + c) / 2;
+// console.log(gm(345, 23, 12));
 
 // const calcAvarega = (a, b, c) => (a + b + c) / 3;
 // console.log(calcAvarega(3, 4, 5));
@@ -419,62 +419,72 @@ console.log(gm(345, 23, 12));
 // console.log(asd(carPrice, taxAmount));
 
 //Serious task
-function muk(car, tank) {
-  const automobile = ` ${car} cars and ${tank} tanks have been sold`;
-  return automobile;
-}
-let carsSold;
+// function muk(car, tank) {
+//   const automobile = ` ${car} cars and ${tank} tanks have been sold`;
+//   return automobile;
+// }
+// let carsSold;
 
-while (true) {
-  const input = +prompt("Enter the number of cars sold:");
+// while (true) {
+//   const input = +prompt("Enter the number of cars sold:");
 
-  if (!isNaN(input)) {
-    carsSold = input;
-    break; // Exit the loop if valid input is provided
-  } else {
-    alert("Please enter only numbers.");
-  }
-}
+//   if (!isNaN(input)) {
+//     carsSold = input;
+//     break; // Exit the loop if valid input is provided
+//   } else {
+//     alert("Please enter only numbers.");
+//   }
+// }
 
-let tankSold;
+// let tankSold;
 
-while (true) {
-  const input = +prompt("Enter the number of tanks sold:");
+// while (true) {
+//   const input = +prompt("Enter the number of tanks sold:");
 
-  if (!isNaN(input)) {
-    tankSold = input;
-    break; // Exit the loop if valid input is provided
-  } else {
-    alert("Please enter only numbers.");
-  }
-}
+//   if (!isNaN(input)) {
+//     tankSold = input;
+//     break; // Exit the loop if valid input is provided
+//   } else {
+//     alert("Please enter only numbers.");
+//   }
+// }
 
-console.log("Cars sold:", carsSold);
-console.log("Tanks sold:", tankSold);
+// console.log("Cars sold:", carsSold);
+// console.log("Tanks sold:", tankSold);
 
-const automobile = muk(carsSold, tankSold);
-//<=*****************************************///////////////////
+// const automobile = muk(carsSold, tankSold);
+// //<=*****************************************///////////////////
 
-const PricePerCar = 12000;
-const TaxPerCar = 300;
-console.log(carsSold);
-const revenue = (carsSold + tankSold) * PricePerCar;
-const tax = (carsSold + tankSold) * TaxPerCar;
-const amountleft = revenue - tax;
-// console.log(amountleft);
+// const PricePerCar = 12000;
+// const TaxPerCar = 300;
+// console.log(carsSold);
+// const revenue = (carsSold + tankSold) * PricePerCar;
+// const tax = (carsSold + tankSold) * TaxPerCar;
+// const amountleft = revenue - tax;
+// // console.log(amountleft);
 
-const final = `${automobile} and their revenue $${revenue} with $${tax} tax.
-total amount left $${amountleft}`;
+// const final = `${automobile} and their revenue $${revenue} with $${tax} tax.
+// total amount left $${amountleft}`;
 
-console.log(final);
-const cutFruitPieces = (fruit) => fruit * 4;
+// console.log(final);
+// const cutFruitPieces = (fruit) => fruit * 4;
 
-function fruitProcessor(apples, oranges) {
-  const applePieces = cutFruitPieces(apples);
-  const orangePieces = cutFruitPieces(oranges);
+// function fruitProcessor(apples, oranges) {
+//   const applePieces = cutFruitPieces(apples);
+//   const orangePieces = cutFruitPieces(oranges);
 
-  const juice = `Juice with ${applePieces} apple pieces and ${orangePieces} orange pieces.`;
-  return juice;
-}
+//   const juice = `Juice with ${applePieces} apple pieces and ${orangePieces} orange pieces.`;
+//   return juice;
+// }
 
-console.log(fruitProcessor(4, 5));
+// console.log(fruitProcessor(4, 5));
+
+const calcage = function (birthYear) {
+  return 2037 - birthYear;
+};
+const yearUntilRetirement = function (birthYear, firstName) {
+  const age = calcage(birthYear);
+  const retirment = 65 - age;
+  return retirment;
+};
+console.log(yearUntilRetirement(2003, "Mukhammadaziz"));
