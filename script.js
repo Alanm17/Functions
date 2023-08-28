@@ -497,3 +497,20 @@ const yearUntilRetirement = function (birthYear, firstName) {
 
 console.log(yearUntilRetirement(1991, "Mukhammadaziz"));
 console.log(yearUntilRetirement(1950, "aziz"));
+
+const friend1 = "Abror";
+const friend2 = "Humoyun";
+const friend3 = "Jahongir";
+
+const friends = ["Abror", "Humoyun", "Jahongir"];
+console.log(friends[2]);
+
+const years = new Array(2002, 2003, 2000, 2001);
+console.log(friends[0]);
+console.log(friends[2]);
+console.log(friends[1]);
+
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Mukhammadaziz";
+console.log(friends[2]);
