@@ -485,6 +485,15 @@ const calcage = function (birthYear) {
 const yearUntilRetirement = function (birthYear, firstName) {
   const age = calcage(birthYear);
   const retirment = 65 - age;
-  return retirment;
+
+  if (retirment > 0) {
+    console.log(`${firstName} hasn't retired yet`);
+    return retirment;
+  } else {
+    console.log(`${firstName} has already retired `);
+    return -1;
+  }
 };
-console.log(yearUntilRetirement(2003, "Mukhammadaziz"));
+
+console.log(yearUntilRetirement(1991, "Mukhammadaziz"));
+console.log(yearUntilRetirement(1950, "aziz"));
