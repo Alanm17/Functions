@@ -479,38 +479,66 @@
 
 // console.log(fruitProcessor(4, 5));
 
-const calcage = function (birthYear) {
-  return 2037 - birthYear;
+// const calcage = function (birthYear) {
+//   return 2037 - birthYear;
+// };
+// const yearUntilRetirement = function (birthYear, firstName) {
+//   const age = calcage(birthYear);
+//   const retirment = 65 - age;
+
+//   if (retirment > 0) {
+//     console.log(`${firstName} hasn't retired yet`);
+//     return retirment;
+//   } else {
+//     console.log(`${firstName} has already retired `);
+//     return -1;
+//   }
+// };
+
+// console.log(yearUntilRetirement(1991, "Mukhammadaziz"));
+// console.log(yearUntilRetirement(1950, "aziz"));
+
+// const friend1 = "Abror";
+// const friend2 = "Humoyun";
+// const friend3 = "Jahongir";
+
+// const friends = ["Abror", "Humoyun", "Jahongir"];
+// console.log(friends[2]);
+
+// const years = new Array(2002, 2003, 2000, 2001);
+// console.log(friends[0]);
+// console.log(friends[2]);
+// console.log(friends[1]);
+
+// console.log(friends[friends.length - 1]);
+
+// friends[2] = "Mukhammadaziz";
+// console.log(friends[2]);
+
+// const jonasArray = [
+//   "Mukhammadaziz",
+//   "Kholdarov",
+//   2023 - 2003,
+//   "teacher",
+//   ["Jahongir", "Abror", "Humoyun"],
+// ];
+
+const jonas = {
+  firstName: "Mukhammadaziz",
+  lastName: " Kholdarov",
+  job: "Student",
+  age: 2023 - 2003,
+  friends: ["Jahongir", "Abror", "Humoyun"],
 };
-const yearUntilRetirement = function (birthYear, firstName) {
-  const age = calcage(birthYear);
-  const retirment = 65 - age;
+console.log(jonas[("firstName", "lastName")]);
 
-  if (retirment > 0) {
-    console.log(`${firstName} hasn't retired yet`);
-    return retirment;
-  } else {
-    console.log(`${firstName} has already retired `);
-    return -1;
-  }
-};
-
-console.log(yearUntilRetirement(1991, "Mukhammadaziz"));
-console.log(yearUntilRetirement(1950, "aziz"));
-
-const friend1 = "Abror";
-const friend2 = "Humoyun";
-const friend3 = "Jahongir";
-
-const friends = ["Abror", "Humoyun", "Jahongir"];
-console.log(friends[2]);
-
-const years = new Array(2002, 2003, 2000, 2001);
-console.log(friends[0]);
-console.log(friends[2]);
-console.log(friends[1]);
-
-console.log(friends[friends.length - 1]);
-
-friends[2] = "Mukhammadaziz";
-console.log(friends[2]);
+const Namekey = "Name";
+console.log(jonas["last" + Namekey]);
+console.log(jonas[("first" + Namekey, [jonas.friends[1]])]);
+const interestedIn = prompt("What do u wanna know about me? ");
+console.log(jonas[interestedIn]);
+if (jonas(interestedIn)) {
+  console.log(jonas[interestedIn]);
+} else {
+  console.log("Wrong request!");
+}
