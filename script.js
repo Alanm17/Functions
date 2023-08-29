@@ -534,11 +534,22 @@ console.log(jonas[("firstName", "lastName")]);
 
 const Namekey = "Name";
 console.log(jonas["last" + Namekey]);
-console.log(jonas[("first" + Namekey, [jonas.friends[1]])]);
+console.log(jonas["first" + Namekey]);
 const interestedIn = prompt("What do u wanna know about me? ");
-console.log(jonas[interestedIn]);
-if (jonas(interestedIn)) {
+// console.log(jonas[interestedIn]);
+jonas.location = "Andijan";
+jonas["Email"] = "mukhammadazizuae@gmail.com";
+if (jonas[interestedIn]) {
   console.log(jonas[interestedIn]);
 } else {
-  console.log("Wrong request!");
+  console.log(
+    "Wrong request! Choose between age,lastName,firstName,job,friends"
+  );
 }
+// console.log(jonas);
+
+//Challange
+// const me = ["Jahongir", "Abror", "Humoyun"];
+console.log(
+  `${jonas.firstName} has ${jonas.friends.length} friends but the best one is ${jonas.friends[0]} he lives in ${jonas.location}`
+);
