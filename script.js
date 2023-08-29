@@ -523,33 +523,69 @@
 //   ["Jahongir", "Abror", "Humoyun"],
 // ];
 
+// const jonas = {
+//   firstName: "Mukhammadaziz",
+//   lastName: " Kholdarov",
+//   job: "Student",
+//   age: 2023 - 2003,
+//   friends: ["Jahongir", "Abror", "Humoyun"],
+// };
+// console.log(jonas[("firstName", "lastName")]);
+
+// const Namekey = "Name";
+// console.log(jonas["last" + Namekey]);
+// console.log(jonas["first" + Namekey]);
+// const interestedIn = prompt("What do u wanna know about me? ");
+// // console.log(jonas[interestedIn]);
+// jonas.location = "Andijan";
+// jonas["Email"] = "mukhammadazizuae@gmail.com";
+// if (jonas[interestedIn]) {
+//   console.log(jonas[interestedIn]);
+// } else {
+//   console.log(
+//     "Wrong request! Choose between age,lastName,firstName,job,friends"
+//   );
+// }
+// // console.log(jonas);
+
+// //Challange
+// // const me = ["Jahongir", "Abror", "Humoyun"];
+// console.log(
+//   `${jonas.firstName} has ${jonas.friends.length} friends but the best one is ${jonas.friends[0]} he lives in ${jonas.location}`
+// );
 const jonas = {
   firstName: "Mukhammadaziz",
   lastName: " Kholdarov",
   job: "Student",
-  age: 2023 - 2003,
+  birthYear: 2003,
   friends: ["Jahongir", "Abror", "Humoyun"],
+  hasLicense: false,
+  // calcAge: function () {
+  //   console.log(this);
+  //   return 2037 - this.birthYear;
+  // },
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+  getSummery: function () {
+    return `${this.firstName} is a ${this.calcAge()} - years old ${
+      this.job
+    } and he has ${this.hasLicense ? "a" : "no"} driver's license.`;
+  },
 };
-console.log(jonas[("firstName", "lastName")]);
+console.log(jonas.getSummery());
 
-const Namekey = "Name";
-console.log(jonas["last" + Namekey]);
-console.log(jonas["first" + Namekey]);
-const interestedIn = prompt("What do u wanna know about me? ");
-// console.log(jonas[interestedIn]);
-jonas.location = "Andijan";
-jonas["Email"] = "mukhammadazizuae@gmail.com";
-if (jonas[interestedIn]) {
-  console.log(jonas[interestedIn]);
-} else {
-  console.log(
-    "Wrong request! Choose between age,lastName,firstName,job,friends"
-  );
-}
-// console.log(jonas);
-
-//Challange
-// const me = ["Jahongir", "Abror", "Humoyun"];
-console.log(
-  `${jonas.firstName} has ${jonas.friends.length} friends but the best one is ${jonas.friends[0]} he lives in ${jonas.location}`
-);
+// // prompt.birthYear(this);
+// console.log(jonas.age);
+// console.log(jonas.age);
+// console.log(jonas.age);
+// if (jonas.hasLicense == true) {
+//   console.log(
+//     `${jonas.firstName} is a ${this.colcAge} - old teacher and he has driver's License `
+//   );
+// } else if (jonas.hasLicense == false) {
+//   console.log(
+//     `${jonas.firstName} is a ${this.colcAge} - old teacher and he has not driver's license `
+//   );
+// }
