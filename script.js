@@ -589,3 +589,52 @@ console.log(jonas.getSummery());
 //     `${jonas.firstName} is a ${this.colcAge} - old teacher and he has not driver's license `
 //   );
 // }
+// task1
+// const BMItest = {
+//   fullName: 'John'
+//   Johnbmi: 28.3,
+//   Johnhieght: 1.95,
+//   Markbmi: 23.9,
+//   Markheight: 1.69,
+//   calculator:
+//   // task2
+//   calcBMI: function () {
+//     return `John's BMI ${this.Johnbmi} is higher than Mark's BMI ${this.Markbmi}`;
+//   },
+//   // task2
+// };
+// console.log(BMItest.calcBMI());
+
+const Mark = {
+  fullName: "Mark",
+  mass: 78,
+  height: 1.69,
+  calcBMII: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
+};
+const John = {
+  fullName: "John",
+  mass: 92,
+  height: 1.95,
+  calcBMII: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
+};
+
+Mark.calcBMII();
+John.calcBMII();
+console.log(Mark.bmi);
+console.log(John.bmi);
+
+if (Mark.bmi > John.bmi) {
+  console.log(
+    `(${Mark.fullName})'s BMI (${Mark.bmi})is higher than (${John.fullName})'s BMI (${John.bmi})`
+  );
+} else if (John.bmi > Mark.bmi) {
+  console.log(
+    `(${John.fullName})'s BMI (${John.bmi})is higher than (${Mark.fullName})'s BMI (${Mark.bmi})`
+  );
+}
