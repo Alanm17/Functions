@@ -553,28 +553,28 @@
 // console.log(
 //   `${jonas.firstName} has ${jonas.friends.length} friends but the best one is ${jonas.friends[0]} he lives in ${jonas.location}`
 // );
-const jonas = {
-  firstName: "Mukhammadaziz",
-  lastName: " Kholdarov",
-  job: "Student",
-  birthYear: 2003,
-  friends: ["Jahongir", "Abror", "Humoyun"],
-  hasLicense: false,
-  // calcAge: function () {
-  //   console.log(this);
-  //   return 2037 - this.birthYear;
-  // },
-  calcAge: function () {
-    this.age = 2037 - this.birthYear;
-    return this.age;
-  },
-  getSummery: function () {
-    return `${this.firstName} is a ${this.calcAge()} - years old ${
-      this.job
-    } and he has ${this.hasLicense ? "a" : "no"} driver's license.`;
-  },
-};
-console.log(jonas.getSummery());
+// const jonas = {
+//   firstName: "Mukhammadaziz",
+//   lastName: " Kholdarov",
+//   job: "Student",
+//   birthYear: 2003,
+//   friends: ["Jahongir", "Abror", "Humoyun"],
+//   hasLicense: false,
+//   // calcAge: function () {
+//   //   console.log(this);
+//   //   return 2037 - this.birthYear;
+//   // },
+//   calcAge: function () {
+//     this.age = 2037 - this.birthYear;
+//     return this.age;
+//   },
+//   getSummery: function () {
+//     return `${this.firstName} is a ${this.calcAge()} - years old ${
+//       this.job
+//     } and he has ${this.hasLicense ? "a" : "no"} driver's license.`;
+//   },
+// };
+// console.log(jonas.getSummery());
 
 // // prompt.birthYear(this);
 // console.log(jonas.age);
@@ -605,36 +605,59 @@ console.log(jonas.getSummery());
 // };
 // console.log(BMItest.calcBMI());
 
-const Mark = {
-  fullName: "Mark",
-  mass: 78,
-  height: 1.69,
-  calcBMII: function () {
-    this.bmi = this.mass / this.height ** 2;
-    return this.bmi;
-  },
-};
-const John = {
-  fullName: "John",
-  mass: 92,
-  height: 1.95,
-  calcBMII: function () {
-    this.bmi = this.mass / this.height ** 2;
-    return this.bmi;
-  },
-};
+// const Mark = {
+//   fullName: "Mark",
+//   mass: 78,
+//   height: 1.69,
+//   calcBMII: function () {
+//     this.bmi = this.mass / this.height ** 2;
+//     return this.bmi;
+//   },
+// };
+// const John = {
+//   fullName: "John",
+//   mass: 92,
+//   height: 1.95,
+//   calcBMII: function () {
+//     this.bmi = this.mass / this.height ** 2;
+//     return this.bmi;
+//   },
+// };
 
-Mark.calcBMII();
-John.calcBMII();
-console.log(Mark.bmi);
-console.log(John.bmi);
+// Mark.calcBMII();
+// John.calcBMII();
+// console.log(Mark.bmi);
+// console.log(John.bmi);
 
-if (Mark.bmi > John.bmi) {
-  console.log(
-    `(${Mark.fullName})'s BMI (${Mark.bmi})is higher than (${John.fullName})'s BMI (${John.bmi})`
-  );
-} else if (John.bmi > Mark.bmi) {
-  console.log(
-    `(${John.fullName})'s BMI (${John.bmi})is higher than (${Mark.fullName})'s BMI (${Mark.bmi})`
-  );
-}
+// if (Mark.bmi > John.bmi) {
+//   console.log(
+//     `(${Mark.fullName})'s BMI (${Mark.bmi})is higher than (${John.fullName})'s BMI (${John.bmi})`
+//   );
+// } else if (John.bmi > Mark.bmi) {
+//   console.log(
+//     `(${John.fullName})'s BMI (${John.bmi})is higher than (${Mark.fullName})'s BMI (${Mark.bmi})`
+//   );
+// }
+//
+// console.log("Lifting weight repetition 1 🏋️‍♀️");
+// console.log("Lifting weight repetition 2 🏋️‍♀️");
+// console.log("Lifting weight repetition 3 🏋️‍♀️");
+// console.log("Lifting weight repetition 4 🏋️‍♀️");
+// console.log("Lifting weight repetition 5 🏋️‍♀️");
+// console.log("Lifting weight repetition 6 🏋️‍♀️");
+// console.log("Lifting weight repetition 7 🏋️‍♀️");
+// console.log("Lifting weight repetition 8 🏋️‍♀️");
+// console.log("Lifting weight repetition 9 🏋️‍♀️");
+// console.log("Lifting weight repetition 10 🏋️‍♀️");
+
+// for (let rep = 6; rep <= 30; rep++) {
+//   console.log(`Lifting weight repetition ${rep} 🏋️‍♀️`);
+// }
+
+// const jonasArray = [
+//   "Mukhammadaziz",
+//   "Kholdarov",
+//   2023 - 2003,
+//   "teacher",
+//   ["Jahongir", "Abror", "Humoyun"],
+// ];
