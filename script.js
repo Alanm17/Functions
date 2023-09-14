@@ -650,14 +650,131 @@
 // console.log("Lifting weight repetition 9 🏋️‍♀️");
 // console.log("Lifting weight repetition 10 🏋️‍♀️");
 
-// for (let rep = 6; rep <= 30; rep++) {
+// for (let rep = 1; rep <= 12; rep++) {
 //   console.log(`Lifting weight repetition ${rep} 🏋️‍♀️`);
 // }
 
-// const jonasArray = [
+// const jonas = [
 //   "Mukhammadaziz",
 //   "Kholdarov",
-//   2023 - 2003,
+//   20,
+//   "teacher",
+//   ["Jahongir", "Abror", "Humoyun"],
+//   true,
+// ];
+// const types = [];
+// // for (let jonasArray = 1; jonasArray <= 10; jonasArray++) {
+// //   console.log(`it is really dangerous to play around the lake ${jonasArray}`);
+// // }
+
+// for (let i = 0; i < jonas.length; i++) {
+//   console.log(jonas[i], typeof jonas[i]);
+//   // types[i] = typeof jonas[i];
+//   // types[i] = typeof jonas[i];
+//   types.push(typeof jonas[i]);
+// }
+// console.log(types);
+
+// const years = [2003, 1998, 1997, 2004];
+// const ages = [];
+// for (let i = 0; i < years.length; i++) {
+//   ages.push(2037 - years[i]);
+// }
+// console.log(ages);
+
+// ///////////
+// console.log("----Only strings-----");
+// for (let i = 0; i < jonas.length; i++) {
+//   if (typeof jonas[i] !== "string") continue;
+//   console.log(jonas[i], typeof jonas[i]);
+// }
+// console.log("----Only numbers-----");
+// for (let i = 0; i < jonas.length; i++) {
+//   if (typeof jonas[i] === "number") break;
+//   console.log(jonas[i], typeof jonas[i]);
+// }
+
+// const jonas = [
+//   "Mukhammadaziz",
+//   "Kholdarov",
+//   20,
 //   "teacher",
 //   ["Jahongir", "Abror", "Humoyun"],
 // ];
+// for (let i = jonas.length - 1; i >= 0; i--) {
+//   console.log(i, jonas[i]);
+// }
+
+// for (let exersice = 0; exersice < 9; exersice++) {
+//   console.log(`----start ${exersice}`);
+
+//   for (let rep = 0; rep < 6; rep++) {
+//     console.log(`lifting ${rep}`);
+//   }
+// }
+
+// for (let rep = 1; rep <= 12; rep++) {
+//   console.log(`Lifting weight repetition ${rep} 🏋️‍♀️`);
+// }
+// let rep = 1;
+// while (rep <= 10) {
+//   // console.log(`while weight repetition ${rep} 🏋️‍♀️`);
+//   // rep++;
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+
+// while (dice !== 6) {
+//   console.log(`you rolled a ${dice}`);
+//   dice = Math.trunc(Math.random() * 6) + 1;
+//   if (dice === 6) {
+//     console.log("Loop is about to end.....");
+//   }
+// }
+// const calcTip = function (bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+//   // return reg >= 200 && reg <= 300 ? reg * 0.15 : reg * 0.2;
+// };
+// // const calcTip = (bill) =>
+// //   bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// const bills = [125, 555, 44];
+// // const reg = [234, 121, 290];
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// // const tip = [calcTip(reg[0]), calcTip(reg[1]), calcTip(reg[2])];
+// const totals = [
+//   bills[0] + tips[0],
+//   bills[1] + tips[1],
+//   bills[2] + tips[2],
+//   // bills[3] + tips[3],
+// ];
+// console.log(bills, tips, totals);
+// challange
+const calcTip = function (bills) {
+  return bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.2;
+};
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+for (let i = 0; i < bills.length; i++) {
+  const tip = calcTip(bills[i]);
+  tips.push(tip);
+  totals.push(tip + bills[i]);
+}
+console.log(bills, tips, totals);
+/////////////////////////////////////////////////..............................................>
+
+const mg = function (asd) {
+  return asd >= 50 && asd <= 300 ? asd * 0.15 : asd * 0.2;
+};
+const billls = [22, 295, 176, 440, 37, 105, 10, 1100];
+const tipss = [];
+const totalls = [];
+
+for (let i = 0; i < billls.length; i++) {
+  const tipp = mg(billls[i]);
+  tipss.push(tipp);
+  totalls.push(tipp + billls[i]);
+}
+console.log(billls, totalls, tipss);
